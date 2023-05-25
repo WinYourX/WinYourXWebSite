@@ -20,11 +20,10 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue'
+import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
-import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons-vue';
 
-const current = reactive([])
+const current = ref([])
 </script>
 
 <style scoped>
