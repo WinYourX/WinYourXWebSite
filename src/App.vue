@@ -1,7 +1,7 @@
 <template>
   <a-row class="header" type="flex" justify="space-between" align="middle">
     <a-col :span="6">
-      <img alt="logo" src="@/assets/img/logo.png" height="125"/>
+      <img alt="logo" src="@/assets/img/Logo.png" height="125"/>
     </a-col>
     <a-col :span="12">
       <a-menu v-model:selectedKeys="current" mode="horizontal">
