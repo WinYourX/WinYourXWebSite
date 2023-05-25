@@ -1,35 +1,45 @@
 <template>
-  <a-row class="header" type="flex" justify="space-between" align="middle">
-    <a-col :span="6">
-      <img alt="logo" src="@/assets/img/Logo.png" height="125"/>
-    </a-col>
-    <a-col :span="12">
-      <a-menu v-model:selectedKeys="current" mode="horizontal">
-        <a-menu-item key="mail"><RouterLink to="/about">Home</RouterLink></a-menu-item>
-      </a-menu>
-    </a-col>
-  </a-row>
-  <a-row>
-    <a-col :span="24">
-      <RouterView/>
-    </a-col>
-  </a-row>
-  <a-row>
-    <a-col :span="24">col-12</a-col>
-  </a-row>
+  <a-space direction="vertical" style="width: 100vw">
+    <div class="header">
+      <GlobalHeader/>
+    </div>
+    <div class="body">
+      <a-row>
+        <a-col :span="24">
+          <RouterView/>
+        </a-col>
+      </a-row>
+    </div>
+    <div class="footer">
+      <GlobalFooter/>
+    </div>
+  </a-space>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
-
-const current = ref([])
+import GlobalHeader from "@/components/layout/GlobalHeader.vue"
+import GlobalFooter from "@/components/layout/GlobalFooter.vue";
 </script>
 
 <style scoped>
 .header {
-  /*height: 100vh;*/
+  width: 96vw;
+  margin: 0 auto;
+  border-bottom: #d5eaff 1px solid;
   /*background-image: url("@/assets/img/HeaderBg-3840x2560.jpg");*/
 //background-repeat: no-repeat; //background-size: 100% 100%;
+}
+
+.body {
+  width: 90vw;
+  margin: 0 auto;
+  min-height: 50vh;
+}
+
+.footer {
+  width: 100vw;
+  margin: 0 auto;
+  background-image: linear-gradient(0deg, #fff, #d5eaff);
+  padding-top: 10px;
 }
 </style>
