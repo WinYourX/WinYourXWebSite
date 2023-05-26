@@ -7,11 +7,11 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from 'vue'
-import {RouterLink, useRoute} from "vue-router"
+import { ref, watch } from 'vue'
+import { RouterLink, useRoute } from 'vue-router'
 
 const route = useRoute()
-const current = ref([route.name === undefined ? 'index' : route.name])
+const current = ref([])
 const menuList = ref([
   {
     key: 'index',
@@ -19,13 +19,28 @@ const menuList = ref([
     title: '首页'
   },
   {
+    key: 'gasp',
+    to: '/gasp',
+    title: 'Gasp'
+  },
+  {
+    key: 'threejs',
+    to: '/threejs',
+    title: 'ThreeJs'
+  },
+  {
     key: 'about',
     to: '/about',
     title: '关于'
   }
 ])
+
+watch(
+  () => route.name,
+  (newValue, oldValue) => {
+    current.value = [newValue]
+  }
+)
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
