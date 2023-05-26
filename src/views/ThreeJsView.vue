@@ -67,7 +67,7 @@ onMounted(() => {
   const planeSize = 40
 
   const TextureLoader = new THREE.TextureLoader()
-  const texture = TextureLoader.load('src/assets/img/Ground-127x127.png')
+  const texture = TextureLoader.load('static/img/Ground-127x127.png')
   texture.wrapS = THREE.RepeatWrapping
   texture.wrapT = THREE.RepeatWrapping
   texture.magFilter = THREE.NearestFilter
