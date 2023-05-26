@@ -84,7 +84,7 @@ onMounted(() => {
   scene.add(mesh)
 
   loader.load(
-    'src/assets/3d/ThreeJs.glb',
+    'static/3d/ThreeJs.glb',
     function (gltf) {
       model = gltf.scene
       scene.add(model)
