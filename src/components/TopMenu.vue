@@ -6,7 +6,7 @@
   </a-menu>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 

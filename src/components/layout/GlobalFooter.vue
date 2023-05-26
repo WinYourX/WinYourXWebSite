@@ -17,7 +17,7 @@
   </a-row>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref } from 'vue'
 
 const items = ref(24)

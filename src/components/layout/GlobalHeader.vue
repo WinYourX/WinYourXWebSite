@@ -9,7 +9,7 @@
   </a-row>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import TopMenu from '@/components/TopMenu.vue'
 import { RouterLink } from 'vue-router'
 </script>

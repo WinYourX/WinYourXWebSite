@@ -16,7 +16,7 @@
   </a-space>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import GlobalHeader from '@/components/layout/GlobalHeader.vue'
 import GlobalFooter from '@/components/layout/GlobalFooter.vue'
 </script>
