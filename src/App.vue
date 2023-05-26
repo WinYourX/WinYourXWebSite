@@ -26,8 +26,6 @@ import GlobalFooter from '@/components/layout/GlobalFooter.vue'
   width: 96vw;
   margin: 0 auto;
   border-bottom: #d5eaff 1px solid;
-  /*background-image: url("@/assets/img/HeaderBg-3840x2560.jpg");*/
-  //background-repeat: no-repeat; //background-size: 100% 100%;
 }
 
 .body {
