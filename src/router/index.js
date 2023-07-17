@@ -10,9 +10,9 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/gasp',
-      name: 'gasp',
-      component: () => import('@/views/GaspView.vue')
+      path: '/gsap',
+      name: 'gsap',
+      component: () => import('@/views/GsapView.vue')
     },
     {
       path: '/threejs',

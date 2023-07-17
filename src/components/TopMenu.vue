@@ -19,9 +19,9 @@ const menuList = ref([
     title: '首页'
   },
   {
-    key: 'gasp',
-    to: '/gasp',
-    title: 'Gasp'
+    key: 'Gsap',
+    to: '/gsap',
+    title: 'Gsap'
   },
   {
     key: 'threejs',
